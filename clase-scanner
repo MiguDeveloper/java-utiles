@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Bienvenido {
+	public static void main (String args[]){
+		//declaramos el objeto que nos permite el ingreso por teclado
+		Scanner entrada= new Scanner(System.in);
+		
+		System.out.print("hey!!");
+		System.out.println("Hola \"Miguel\" ahora vamos \n\ta mostrar \nel texto en varias lineas");
+		System.out.println("Hey 2!!");
+		System.out.printf("%s\n%s\n%s\n", "Miguel", "Angel","prueba");
+		
+		int num1, //1er sumando
+		    num2, //2do sumando
+		    suma; //resultado
+		
+		//leemos el 1er numero
+		System.out.print("Ingrese el primer numero: ");
+		num1 = entrada.nextInt();
+		
+		//leemos el 2do numero
+		System.out.print("Ingrese el segundo numero: ");
+		num2 = entrada.nextInt();
+		
+		suma = num1 + num2;
+		
+		System.out.println("la suma es: " + suma);
+		System.out.printf("El resultado de la suma es: %d ",suma);
+		
+		if(num1 == num2){
+			System.out.println("Los numeros son iguales");
+		}else if(num1 < num2){
+			System.out.println("el primer sumando en menor que el segundo");
+		}else{
+			System.out.println("El primer sumando es mayor que el segundo");
+		}
+		
+		
+	}//fin main
+}//fin bienvenido

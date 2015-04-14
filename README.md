@@ -1,2 +1,2 @@
 # java-utiles
-códigos breves para ayuda
+códigos de java breves para ayuda en el día a día

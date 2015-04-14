@@ -1,0 +1,30 @@
+//ejemplos de ventanas de dialogo asi como de captura de datos
+
+import javax.swing.JOptionPane;
+
+public class Dialogo1 {
+	
+	public static String nombre;
+	private static int sumando1, sumando2, suma;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "Bienvenido al curso");
+		
+		nombre = JOptionPane.showInputDialog("Cual es tu nombre?");
+		
+		JOptionPane.showMessageDialog(null, nombre);
+		
+		//ejemplo de suma de dos numeros
+		sumando1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el primer sumando:"));
+		sumando2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo sumando: "));
+		
+		suma = sumando1 + sumando2;
+		
+		//mostramos la suma
+		
+		JOptionPane.showMessageDialog(null,"La suma de " + sumando1 + " + " + sumando2 + " es " + suma);
+		
+	}
+
+}
